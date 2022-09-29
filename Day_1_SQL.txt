@@ -1,0 +1,38 @@
+			Automated Student Registration System
+
+1. Course:- 
+	create table Course
+	(
+	courseId int primary key ,
+	courseName varchar(20) not null,
+	courseFee int not null,
+	courseSeat int not null,
+	courseDuration varchar(30) not null
+	);
+
+
+2. Student:- 
+	create table student
+	(
+	stdID int primary key auto_increment,
+	StdName varchar(20) not null,
+	Address varchar(50) not null,
+	email varchar(30) unique not null,
+	mobile varchar(10),
+	courseId int,
+
+	foreign key (courseId) references Course(courseId)
+	);
+
+3. Administer: 
+	create table administar
+	(
+	AdminId int primary key auto_increment,
+	AdminName varchar(20) not null,
+	AdminAddress varchar(30) not null,
+	AdminEmail varchar(30) unique not null,
+	adminMobile varchar(10),
+	courseId int,
+
+	foreign key (courseId) references Course(courseId)
+	);
