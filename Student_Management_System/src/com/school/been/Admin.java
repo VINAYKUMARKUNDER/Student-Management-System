@@ -21,28 +21,37 @@ public class Admin {
 	public void setAdminAddress(String adminAddress) {
 		AdminAddress = adminAddress;
 	}
-	public String getAdminEmail() {
+	public String getAdminEmail() 
+	{
 		return AdminEmail;
 	}
-	public void setAdminEmail(String adminEmail) {
+	public void setAdminEmail(String adminEmail) 
+	{
 		AdminEmail = adminEmail;
 	}
-	public String getAdminMobile() {
+	public String getAdminMobile()
+	{
 		return adminMobile;
 	}
-	public void setAdminMobile(String adminMobile) {
+	public void setAdminMobile(String adminMobile) 
+	{
 		this.adminMobile = adminMobile;
 	}
 	
 	
 	
-	public String getAdminName() {
+	public String getAdminName() 
+	{
 		return AdminName;
 	}
-	public void setAdminName(String adminName) {
+	public void setAdminName(String adminName) 
+	{
 		AdminName = adminName;
 	}
-	public Admin() {
+	
+	
+	public Admin() 
+	{
 		// TODO Auto-generated constructor stub
 	}
 	public Admin(int adminId, String adminName, String adminAddress, String adminEmail, String adminMobile) {
@@ -53,8 +62,10 @@ public class Admin {
 		AdminEmail = adminEmail;
 		this.adminMobile = adminMobile;
 	}
+	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "Admin [AdminId=" + AdminId + ", AdminName=" + AdminName + ", AdminAddress=" + AdminAddress
 				+ ", AdminEmail=" + AdminEmail + ", adminMobile=" + adminMobile + "]";
 	}

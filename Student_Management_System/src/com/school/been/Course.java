@@ -10,34 +10,44 @@ public class Course {
 	
 	
 	
-	public int getCourseId() {
+	public int getCourseId() 
+	{
 		return courseId;
 	}
-	public void setCourseId(int courseId) {
+	public void setCourseId(int courseId) 
+	{
 		this.courseId = courseId;
 	}
-	public String getCourseName() {
+	public String getCourseName() 
+	{
 		return courseName;
 	}
-	public void setCourseName(String courseName) {
+	public void setCourseName(String courseName) 
+	{
 		this.courseName = courseName;
 	}
-	public int getCourseFee() {
+	public int getCourseFee() 
+	{
 		return courseFee;
 	}
-	public void setCourseFee(int courseFee) {
+	public void setCourseFee(int courseFee) 
+	{
 		this.courseFee = courseFee;
 	}
-	public int getCourseSeat() {
+	public int getCourseSeat()
+	{
 		return courseSeat;
 	}
-	public void setCourseSeat(int courseSeat) {
+	public void setCourseSeat(int courseSeat) 
+	{
 		this.courseSeat = courseSeat;
 	}
-	public String getCourseDuration() {
+	public String getCourseDuration() 
+	{
 		return courseDuration;
 	}
-	public void setCourseDuration(String courseDuration) {
+	public void setCourseDuration(String courseDuration)
+	{
 		this.courseDuration = courseDuration;
 	}
 	
@@ -54,7 +64,8 @@ public class Course {
 		this.courseDuration = courseDuration;
 	}
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", courseFee=" + courseFee
 				+ ", courseSeat=" + courseSeat + ", courseDuration=" + courseDuration + "]";
 	}

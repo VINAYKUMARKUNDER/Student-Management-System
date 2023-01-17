@@ -1,6 +1,7 @@
 package com.school.been;
 
-public class Student {
+public class Student 
+{
 	
 	private int stdID;
 	private String StdName;
@@ -10,38 +11,51 @@ public class Student {
 	public int getStdID() {
 		return stdID;
 	}
-	public void setStdID(int stdID) {
+	
+	
+	public void setStdID(int stdID) 
+	{
 		this.stdID = stdID;
 	}
-	public String getStdName() {
+	public String getStdName() 
+	{
 		return StdName;
 	}
-	public void setStdName(String stdName) {
+	public void setStdName(String stdName)
+	{
 		StdName = stdName;
 	}
-	public String getAddress() {
+	public String getAddress() 
+	{
 		return Address;
 	}
-	public void setAddress(String address) {
+	public void setAddress(String address) 
+	{
 		Address = address;
 	}
-	public String getEmail() {
+	public String getEmail()
+	{
 		return email;
 	}
-	public void setEmail(String email) {
+	public void setEmail(String email) 
+	{
 		this.email = email;
 	}
-	public String getMobile() {
+	public String getMobile() 
+	{
 		return mobile;
 	}
-	public void setMobile(String mobile) {
+	public void setMobile(String mobile) 
+	{
 		this.mobile = mobile;
 	}
 	
-	public Student() {
+	public Student()
+	{
 		// TODO Auto-generated constructor stub
 	}
-	public Student(int stdID, String stdName, String address, String email, String mobile) {
+	public Student(int stdID, String stdName, String address, String email, String mobile)
+	{
 		super();
 		this.stdID = stdID;
 		StdName = stdName;
@@ -50,7 +64,8 @@ public class Student {
 		this.mobile = mobile;
 	}
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "Student [stdID=" + stdID + ", StdName=" + StdName + ", Address=" + Address + ", email=" + email
 				+ ", mobile=" + mobile + "]";
 	}
