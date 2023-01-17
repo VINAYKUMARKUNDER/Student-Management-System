@@ -2,7 +2,7 @@ package com.school.main;
 
 import java.util.Scanner;
 
-import com.school.Department.MethodImpl;
+import com.school.Department.DepartmentServiceImpl;
 import com.school.been.Course;
 import com.school.been.Student;
 import com.school.exception.BranchException;
@@ -12,7 +12,7 @@ public class AdminUsses {
 	
 	public static void administarRun() {
 		Scanner sc= new Scanner(System.in);
-		MethodImpl all= new MethodImpl();
+		DepartmentServiceImpl all= new DepartmentServiceImpl();
 		
 		boolean status=true;
 		

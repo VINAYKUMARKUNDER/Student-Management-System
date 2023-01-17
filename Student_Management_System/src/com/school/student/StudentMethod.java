@@ -3,7 +3,7 @@ package com.school.student;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-import com.school.Department.MethodImpl;
+import com.school.Department.DepartmentServiceImpl;
 import com.school.been.Student;
 import com.school.connenction.ProvideConnenction;
 import com.school.exception.BranchException;
@@ -17,7 +17,7 @@ public class StudentMethod implements StudentInterface{
 		String msg="Student not found";
 		
 		LoginMethod lm= new LoginMethod();
-		MethodImpl mpl=new MethodImpl();
+		DepartmentServiceImpl mpl=new DepartmentServiceImpl();
 		
 		Student std=	lm.loginStudent(email, password);
 		
@@ -37,7 +37,7 @@ public class StudentMethod implements StudentInterface{
 			
 			int x=ps.executeUpdate();
 			if(x>0) {
-				MethodImpl mpl=new MethodImpl();
+				DepartmentServiceImpl mpl=new DepartmentServiceImpl();
 				msg=mpl.AlocateStudentBatch(batch, courseName1, courseid1, stdId);
 				
 			}else throw new BranchException("Course not found.");

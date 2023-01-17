@@ -5,7 +5,7 @@ import com.school.been.Student;
 import com.school.exception.BranchException;
 import com.school.exception.CourseException;
 
-public interface AllMethodInterface {
+public interface DepartmentService {
 	
 	public String AddNewCourse(int cid, String name, int fee, int seat, String duration);
 	public String updateFee(String name,int fee) throws CourseException;

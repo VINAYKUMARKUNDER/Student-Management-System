@@ -13,7 +13,7 @@ import com.school.exception.BranchException;
 import com.school.exception.CourseException;
 import com.school.exception.StudentException;
 
-public class MethodImpl implements AllMethodInterface{
+public class DepartmentServiceImpl implements DepartmentService{
 
 	@Override
 	public String AddNewCourse(int cid, String name, int fee, int seat, String duration) {
