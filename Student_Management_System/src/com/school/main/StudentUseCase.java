@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 import com.school.exception.BranchException;
 import com.school.exception.StudentException;
-import com.school.student.StudentMethod;
+import com.school.student.StudentServiceImpl;
 
 public class StudentUseCase {
 	
 	public static void StudentRun() {
 		Scanner sc= new Scanner(System.in);
-		StudentMethod stm= new StudentMethod();
+		StudentServiceImpl stm= new StudentServiceImpl();
 		
 		boolean status = true;
 		

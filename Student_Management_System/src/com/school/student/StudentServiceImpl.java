@@ -10,7 +10,7 @@ import com.school.exception.BranchException;
 import com.school.exception.StudentException;
 import com.school.login.LoginMethod;
 
-public class StudentMethod implements StudentInterface{
+public class StudentServiceImpl implements StudentService{
 
 	@Override
 	public String ragistarHimselfinCourse(String email, String password,String course,String batchName, int corseid) throws StudentException {
